@@ -37,7 +37,7 @@ namespace WindowsFormsApp2
                     pictureBox1.Image = imgInput.Bitmap;
 
                     //resize gambar menjadi x,y pixel
-                    Image<Bgr, Byte> resize = imgInput.Resize(200, 200, Emgu.CV.CvEnum.Inter.Cubic);
+                    Image<Bgr, Byte> resize = imgInput.Resize(400, 400, Emgu.CV.CvEnum.Inter.Cubic);
                     this.pictureBox1.Image = resize.ToBitmap();
 
 
